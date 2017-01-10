@@ -1,0 +1,9 @@
+C:\Users\Brent\Documents\Code\C#\AdvancedTextEditor\AdvancedTextEditor\bin\Debug\AdvancedTextEditor.exe.config
+C:\Users\Brent\Documents\Code\C#\AdvancedTextEditor\AdvancedTextEditor\bin\Debug\AdvancedTextEditor.exe
+C:\Users\Brent\Documents\Code\C#\AdvancedTextEditor\AdvancedTextEditor\bin\Debug\AdvancedTextEditor.pdb
+C:\Users\Brent\Documents\Code\C#\AdvancedTextEditor\AdvancedTextEditor\obj\Debug\AdvancedTextEditor.csprojResolveAssemblyReference.cache
+C:\Users\Brent\Documents\Code\C#\AdvancedTextEditor\AdvancedTextEditor\obj\Debug\AdvancedTextEditor.AdvancedTextEditor.resources
+C:\Users\Brent\Documents\Code\C#\AdvancedTextEditor\AdvancedTextEditor\obj\Debug\AdvancedTextEditor.Properties.Resources.resources
+C:\Users\Brent\Documents\Code\C#\AdvancedTextEditor\AdvancedTextEditor\obj\Debug\AdvancedTextEditor.csproj.GenerateResource.Cache
+C:\Users\Brent\Documents\Code\C#\AdvancedTextEditor\AdvancedTextEditor\obj\Debug\AdvancedTextEditor.exe
+C:\Users\Brent\Documents\Code\C#\AdvancedTextEditor\AdvancedTextEditor\obj\Debug\AdvancedTextEditor.pdb
