@@ -18,7 +18,7 @@ namespace AdvancedTextEditor
         public AdvancedTextEditor()
         {
             InitializeComponent();
-            AddTab();
+            AddTab();                   //Opens the page with a blank tab TODO: be able to open documents directly into the program
             GetFontCollection();
             PopulateFontSizes();
         }
@@ -173,12 +173,19 @@ namespace AdvancedTextEditor
         private void GetFontCollection()
         {
             InstalledFontCollection InsFonts = new InstalledFontCollection();
+            int Count = 0;
 
             foreach (FontFamily item in InsFonts.Families)
             {
+                Font newFont = new Font(item.Name, toolStripComboBox1.Font.Size, toolStripComboBox1.Font.Style);
                 toolStripComboBox1.Items.Add(item.Name);
+                toolStripComboBox1.Font = newFont;
+                if (item.Name == "Segoe UI")
+                {
+                    toolStripComboBox1.SelectedIndex = Count;
+                }
+                Count++;
             }
-            toolStripComboBox1.SelectedIndex = 0;
         }
 
         private void PopulateFontSizes()
@@ -203,6 +210,9 @@ namespace AdvancedTextEditor
 
         #endregion
 
+        #region ContextMenu
+
+        //Adding Context Menu Item Functions
         private void ContextUndo_Click(object sender, EventArgs e)
         {
             Undo();
@@ -247,6 +257,12 @@ namespace AdvancedTextEditor
         {
             RemoveAllTabsButThis();
         }
+
+        #endregion
+
+        #region MenuItems
+
+        //Making the Menu Buttons at the top functional (File, Edit)
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -298,6 +314,9 @@ namespace AdvancedTextEditor
             SelectAll();
         }
 
+        #endregion
+
+        #region TopToolStrip
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
             Font BoldFont = new Font(GetCurrentDocument.SelectionFont.FontFamily, GetCurrentDocument.SelectionFont.SizeInPoints, FontStyle.Bold);
@@ -436,12 +455,56 @@ namespace AdvancedTextEditor
             GetCurrentDocument.SelectionFont = NewFont;
         }
 
+        #endregion
+
+        #region LeftToolStrip
+
+        private void newToolStripButton_Click(object sender, EventArgs e)
+        {
+            AddTab();
+        }
+
+        private void RemoveTabToolStripButton_Click(object sender, EventArgs e)
+        {
+            RemoveTab();
+        }
+
+        private void saveToolStripButton_Click(object sender, EventArgs e)
+        {
+            Save();
+        }
+
+        private void cutToolStripButton_Click(object sender, EventArgs e)
+        {
+            Cut();
+        }
+
+        private void copyToolStripButton_Click(object sender, EventArgs e)
+        {
+            Copy();
+        }
+
+        private void pasteToolStripButton_Click(object sender, EventArgs e)
+        {
+            Paste();
+        }
+
+        #endregion
+
+        #region Timer
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (GetCurrentDocument.Text.Length > 0)
             {
                 toolStripStatusLabel1.Text = GetCurrentDocument.Text.Length.ToString();
             }
+            else
+            {
+                toolStripStatusLabel1.Text = 0.ToString();
+            }
         }
+
+        #endregion
+
     }
 }
