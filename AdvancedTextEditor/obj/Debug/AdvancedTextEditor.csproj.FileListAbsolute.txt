@@ -12,7 +12,8 @@ C:\Users\Brent\Documents\Code\Git\Text-Editor\AdvancedTextEditor\obj\Debug\Advan
 C:\Users\Brent\Documents\Code\Git\Text-Editor\AdvancedTextEditor\obj\Debug\AdvancedTextEditor.pdb
 C:\Users\Brent\Documents\Code\Git\Text-Editor\AdvancedTextEditor\bin\Debug\AdvancedTextEditor.exe
 C:\Users\Brent\Documents\Code\Git\Text-Editor\AdvancedTextEditor\bin\Debug\AdvancedTextEditor.pdb
-C:\Users\Brent\Documents\Code\Git\Text-Editor\AdvancedTextEditor\obj\Debug\AdvancedTextEditor.csprojResolveAssemblyReference.cache
 C:\Users\Brent\Documents\Code\Git\Text-Editor\AdvancedTextEditor\obj\Debug\AdvancedTextEditor.AdvancedTextEditor.resources
 C:\Users\Brent\Documents\Code\Git\Text-Editor\AdvancedTextEditor\obj\Debug\AdvancedTextEditor.Properties.Resources.resources
 C:\Users\Brent\Documents\Code\Git\Text-Editor\AdvancedTextEditor\obj\Debug\AdvancedTextEditor.csproj.GenerateResource.Cache
+C:\Users\Brent\Documents\Code\Git\Text-Editor\AdvancedTextEditor\bin\Debug\AdvancedTextEditor.exe.CodeAnalysisLog.xml
+C:\Users\Brent\Documents\Code\Git\Text-Editor\AdvancedTextEditor\bin\Debug\AdvancedTextEditor.exe.lastcodeanalysissucceeded
